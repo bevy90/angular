@@ -9,44 +9,112 @@ input[type="text"] {
   float: left;
   margin-left: 10px;
 }
-.loader {
-  display: none;
-  margin-left: 5px;
-  font-size: 10px;
-  float: left;
-  border-top: 1.1em solid rgba(147, 147, 147, 0.2);
-  border-right: 1.1em solid rgba(147, 147, 147, 0.2);
-  border-bottom: 1.1em solid rgba(147, 147, 147, 0.2);
-  border-left: 1.1em solid #676767;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: load8 1.1s infinite linear;
-  animation: load8 1.1s infinite linear;
+
+#table {
+    clear: both;
+    margin-top: 100px;
 }
-.loader,
-.loader:after {
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
+
+th, td {
+    border-bottom: 1px solid black;
+    padding: 10px;
 }
-@-webkit-keyframes load8 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+
+th {
+    vertical-align: bottom;
+    padding-bottom: 0;
 }
-@keyframes load8 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+
+#remove {
+    height: 20px;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
 }
+
+#remove:hover {
+    background-color: red;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.items, .empty {
+    display: none;
+}
+
+.empty {
+    clear: both;
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+}
+
+#description {
+    width: 500px;
+}
+
+#name {
+    width: 250px;
+}
+
+#shortName {
+    width: 100px;
+}
+
+.list {
+    font-size: .8em;
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.list span {
+    font-weight: bold;
+}
+
+.list #icon{
+    color: red;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    #description {
+        width: 400px;
+    }
+    
+    #name {
+        width: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    #description {
+        width: 350px;
+    }
+    
+    #name {
+        width: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    h1 {
+        font-size: .9em;
+        font-weight: bold;
+    }
+}
+
+
