@@ -1,0 +1,37 @@
+body {
+    background-color: lightyellow;
+}
+
+h1 {
+    font-size: 48px;
+    color:forestgreen;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px red;
+}
+
+.mainLink {
+    width: 500px;
+    margin: 0 auto;
+}
+
+a[ui-sref]{
+    font-size: 18px;
+    color: red;
+}
+
+.current {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+.title {
+    color: forestgreen;
+    font-size: 30px;
+}
+
+li[ui-sref]:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
