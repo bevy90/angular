@@ -9,11 +9,6 @@ h1 {
     text-shadow: 1px 1px 1px red;
 }
 
-.mainLink {
-    width: 500px;
-    margin: 0 auto;
-}
-
 a[ui-sref]{
     font-size: 18px;
     color: red;
@@ -28,10 +23,38 @@ a[ui-sref]{
 .title {
     color: forestgreen;
     font-size: 30px;
+    border-bottom: 4px solid red;
 }
 
-li[ui-sref]:hover {
+.category {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.index {
+    border-radius: 100%;
+    background-color: red;
+    width: 25px;
+    margin: 0 auto;
+}
+
+span[ui-sref] {
+    font-size: 20px;
+}
+
+span[ui-sref]:hover {
     text-decoration: underline;
     cursor: pointer;
     font-weight: bold;
+}
+
+#table {
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+}
+
+td {
+    border-bottom: 1px solid forestgreen;
+    padding: 10px;
 }
