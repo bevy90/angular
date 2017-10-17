@@ -1,0 +1,29 @@
+<div class="container">
+    <div ng-if="info.userExist();">
+        <h1 class="text-center"> My Info</h1>
+        <div>
+            <p>{{ info.user.fname }}</p>
+            <p>{{ info.user.lname }}</p>
+            <p>{{ info.user.email }}</p>
+            <p>{{ info.user.phone }}</p>
+            <p>{{ info.user.favDish }}</p>
+        </div>
+    
+        <h1 class="text-center">Favorite Item</h1>
+        <div class="row">
+            <div class="col-sm-5">
+                <img class="img-responsive" width="250" height="150" ng-src="{{info.basePath}}/images/{{info.user.dish.short_name}}.jpg" alt="{{info.user.dish.name}}">
+            </div>
+
+            <div class="col-sm-7">
+                <h4>{{ info.user.dish.name }}</h4>
+                <p>{{ info.user.dish.description }}</p>
+            </div>
+        </div>
+    </div>
+    
+    <div ng-if="!info.userExist();">
+        <p>You have not signed up yet</p>
+        <a ui-sref="public.register">Sign up Now!</a>
+    </div>
+</div>
