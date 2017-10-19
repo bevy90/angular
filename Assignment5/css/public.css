@@ -83,7 +83,59 @@ button {
 /* End Registration Page */
 
 /* My Info Page */
+.user-heading {
+    color: #557c3e;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+table {
+    width: 100%;
+    border: 1px solid #3F0C1F;
+}
+
+td {
+    border-bottom: 1px solid #3F0C1F;
+    padding: 5px;
+    font-size: 1.2em;
+    color: #f6b319;
+}
+
+.dish-photo {
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    padding: 0;
+    max-width: 250px;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.dish-description {
+    padding-right: 10px;
+}
+
+h4.dish-title {
+    font-weight: bold;
+    color: #f6b319;
+}
+
+p.dish-detail {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #557c3e;
+}
+
+.signup p {
+    color: #f6b319;
+    font-size: 1.5em;
+}
+
+.signup a{
+    color: #557c3e;
+    padding: 5px;
+    font-size: 1.2em;
+}
 
 /* End My Info Page */
 
